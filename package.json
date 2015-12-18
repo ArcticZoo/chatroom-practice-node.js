@@ -1,0 +1,27 @@
+{
+    "name": "hichat",
+    "description": "a realtime chat web application",
+    "version": "0.4.0",
+    "main": "server.js",
+    "dependencies": {
+        "express": "3.4.x",
+        "socket.io": "0.9.x",
+        "mime": "*",
+        "node-uuid": "1.3.3",
+    },
+    "engines": {
+        "node": "0.10.x",
+        "npm": "1.2.x",
+    }
+    "repository": {
+        "type":"git",
+        "url":"https://github.com/ArcticZoo/chatroom-practice-node.js.git",    
+    },
+    "engines":{
+        "node":">=0.6.0",
+}
+
+
+
+
+
