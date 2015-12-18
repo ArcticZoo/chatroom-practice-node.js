@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="chatroom | 练习">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>chatroom</title>
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="banner">
+                <h1>CHAT ROOM</h1>
+                <span id="status"></span>
+            </div>
+            <div id="historyMsg">
+            </div>
+            <div class="controls" >
+                <textarea id="messageInput" placeHolder="说点什么好..."></textarea>
+                <div id＝"btn">
+                     <input id="sendBtn" type="button" value="SEND">
+                     <input id="clearBtn" type="button" value="CLEAR" title="clear screen" />
+                     <input type="submit" value="Upload File" id="upBtn">
+                     <a href="javascript:;" class="file">Select File
+                         <input type="file" name="" id="">
+                     </a>
+                </div>
+            </div>
+        </div>
+        <!--以上为页面主体部分 以下为页面载入部分-->
+        <div id="loginWrapper">
+            <p id="info">正在登陆服务器中，请等待</p>
+            <div id="nickWrapper">
+                <input type="text" placeHolder="nickname" id="nicknameInput" />
+                <input type="button" value="OK" id="loginBtn" />
+            </div>
+        </div>
+        <div id="downtext">
+            <p>计算机网络 聊天室作业 基于node.js实现 </br> 参考教程作者 Wayong </p>
+        </div>
+        <script src="socket.io/socket.io.js"></script>
+        <script src="scripts/chatroom.js"></script>
+        <script src="scripts/jquery-2.1.4.js"></script>
+        <script src="scripts/delivery.js"></script>
+    </body>
+</html>
