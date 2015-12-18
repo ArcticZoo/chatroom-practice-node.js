@@ -4,4 +4,6 @@ http://www.cnblogs.com/Wayou/p/hichat_built_with_nodejs_socket.html
 教程
 和https://github.com/liamks/Delivery.js
 
+https://codeship.com/projects/52145850-8780-0133-141a-1a052f725423/status?branch=master
+
 
