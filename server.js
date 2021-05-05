@@ -2,10 +2,8 @@ var express = require('express'),
     app = express(),
     server = require('http').createServer(app),
     io = require('socket.io').listen(server),
-    users = [],
+    users = [];
     //这两个变量是用作文件传输
-    dl = require('delivery'),
-    fs  = require('fs');
 //这儿指定index的位置
 app.use('/', express.static(__dirname + '/www'));
 server.listen(process.env.PORT || 3000);//heroku专用接口
