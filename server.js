@@ -8,7 +8,9 @@ var express = require('express'),
     fs  = require('fs');
 //这儿指定index的位置
 app.use('/', express.static(__dirname + '/www'));
-server.listen(process.env.PORT || 3000);//heroku专用接口
+server.connection({
+    port: (process.env.PORT || 1643)
+});
 console.log('listening on');
 //调试用端口
 io.sockets.on('connection', function(socket) {
