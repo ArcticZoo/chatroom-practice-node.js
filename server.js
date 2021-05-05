@@ -10,7 +10,6 @@ server.listen(process.env.PORT || 3000);//heroku专用接口
 console.log('listening on');
 //调试用端口
 io.sockets.on('connection', function(socket) {
-    var delivery = dl.listen(socket);
     //新用户登陆
     console.log('success connection')
     //调试 返回给控制台
