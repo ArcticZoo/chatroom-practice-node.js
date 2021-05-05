@@ -65,6 +65,7 @@ h1{
     overflow: auto;
     font-size: 12px;
     padding: 2px;
+    padding-top: 20px;
 }
 #historyMsg img {
     max-width: 90%;
