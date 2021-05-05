@@ -11,12 +11,18 @@ h1{
     padding-top: 0;
     margin-top: 0;
     font-size: 38px;
+    margin-bottom: 10px;
 }
 .wrapper {
-    width: 800px;
-    height: 600px;
+    width: 900px;
+    height: 585px;
     padding: 35px;
-    margin: 60px auto;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin:auto;
     background-color: #fff;
     border-radius: 40px;
 }
@@ -56,16 +62,23 @@ h1{
     height: 300px;
     background-color: #fff;
     overflow: auto;
+    font-size: 12px;
     padding: 2px;
 }
 #historyMsg img {
-    max-width: 99%;
+    max-width: 90%;
 }
-
+#status{
+    font-size: 12px;
+    background-color: #ccc;
+    color: white;
+    border-radius: 14px;
+    padding:4px 10px;
+}
 #messageInput {
-    width: 756px;
-    max-width: 756px; /*防止输入过多后文字越界*/
-    height: 95px;
+    width: 850px;
+    max-width: 850px; /*防止输入过多后文字越界*/
+    height: 70px;
     max-height: 95px;
     display: block;
     border-width:1px;
@@ -101,10 +114,10 @@ h1{
     height: 30px;
     float: left;
     line-height: 20px;
-    border: 2px solid #dedede;
+    border: 2px solid #ccc;
     border-radius: 20px;
     color: #fff;
-    background: #dedede;
+    background: #ccc;
 }
 #selectBtn {
     margin:20px 10px 0 0;
@@ -112,10 +125,10 @@ h1{
     height: 30px;
     float: left;
     line-height: 20px;
-    border: 2px solid #dedede;
+    border: 2px solid #ccc;
     border-radius: 20px;
     color: #fff;
-    background: #dedede;
+    background: #ccc;
 }
 #sendBtn:hover{
     border-color: #5498ff;
@@ -131,8 +144,8 @@ h1{
     margin:20px 10px 0 0;
     position: relative;
     display: inline-block;
-    background: #dedede;
-    border: 2px solid #dedede;
+    background: #ccc;
+    border: 2px solid #ccc;
     border-radius: 20px;
     padding: 3px 12px;
     overflow: hidden;
@@ -159,7 +172,7 @@ h1{
     line-height: 15px;
     height: 15px;
     padding: 35px 0 0 0; /*底部文字距离*/
-    color: #616161;
+    color: #ccc;
 }
 a{
     text-decoration:none;
