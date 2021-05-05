@@ -2,16 +2,14 @@ var express = require('express'),
     app = express(),
     server = require('http').createServer(app),
     io = require('socket.io').listen(server),
-    port = process.env.PORT || 8000,
     users = [],
     //这两个变量是用作文件传输
     dl = require('delivery'),
     fs  = require('fs');
 //这儿指定index的位置
 app.use('/', express.static(__dirname + '/www'));
-server.listen(port, function() {
-    console.log("App is running on port " + port);
-});
+server.listen(process.env.PORT || 3000);//heroku专用接口
+console.log('listening on');
 //调试用端口
 io.sockets.on('connection', function(socket) {
     var delivery = dl.listen(socket);
