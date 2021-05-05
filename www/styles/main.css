@@ -19,7 +19,7 @@ h1{
     padding: 35px;
     position: absolute;
     top:0;
-    bottom: 0;
+    bottom: 30px;
     right: 0;
     left: 0;
     margin:auto;
@@ -37,6 +37,7 @@ h1{
     color: #fff;
     display: block;
     padding-top: 200px;
+    z-index: 2;
 }
 #nickWrapper {
     display: none;
@@ -169,9 +170,12 @@ h1{
 #downtext{
     text-align: center;
     font-size: 9px;
-    line-height: 15px;
+    line-height: 10px;
     height: 15px;
-    padding: 35px 0 0 0; /*底部文字距离*/
+    position: absolute;
+    bottom: 30px;
+    right: calc(50% - 96px);
+    z-index: 1;
     color: #ccc;
 }
 a{
