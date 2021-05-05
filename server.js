@@ -41,27 +41,5 @@ io.sockets.on('connection', function(socket) {
     });
     //传输文件
 
-    delivery.on('receive.success',function(file){
-    fs.writeFile(file.name,file.buffer, function(err){
-      if(err){
-        console.log('File could not be saved.');
-      }else{
-        console.log('File saved.');
-      };
-    });
-  });
-  //文件从服务器到客户端
-   delivery.on('delivery.connect',function(delivery){
-
-    delivery.send({
-      name: 'sample-image.jpg',
-      path : './sample-image.jpg',
-      params: {foo: 'bar'}
-    });
-
-    delivery.on('send.success',function(file){
-      console.log('File successfully sent to client!');
-    });
-
   });
 });
