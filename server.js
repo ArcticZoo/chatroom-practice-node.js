@@ -35,8 +35,7 @@ io.sockets.on('connection', function(socket) {
         socket.broadcast.emit('newMsg', socket.nickname, msg, color);
         console.log('Post message')
     });
+
     //传输文件
 
-
-  });
 });
